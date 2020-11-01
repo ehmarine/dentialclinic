@@ -1,0 +1,241 @@
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; 
+*/
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color:#363636;
+    font-family: 'Roboto Slab', serif; 
+    font-weight: 300;
+}
+
+p {
+    color:#626262;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+
+}
+
+a {
+    color: #363636;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'Roboto Slab', serif; 
+    
+}
+  
+a:hover {
+    color: #25E6C8;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+body {
+    font: weight 400px; ;
+    font-size: 16px;
+    line-height: 1,5;
+    margin: 0;
+    padding: 0;
+    color :#626262;
+}
+
+
+.container {
+    width: 90%; 
+    padding: 0 1rem;
+    margin: 0 auto; /* auto centrerar innehållet horisontellt*/
+}
+
+.navbar-top {
+    border-bottom: 1px solid #707070; 
+}
+
+.navbar , .navbar-top {
+    padding: 0.5rem 1rem;
+}
+
+.navbar .container, .navbar-top .container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.navbar-top .container .clock-hours i {
+    color: #2BAAEC;
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+}
+
+.clock-hours  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    color: #626262;
+    padding:0.2rem 0 0 0.4rem
+}
+
+.social-icons i {
+  padding:0 0.5rem;
+  color: #2BAAEC ;
+  font-size: 0.8rem; 
+}
+
+.navbar-top .clock-icon img {
+  height: 0.8rem;
+}
+
+.social-icons i:hover {
+    cursor: pointer;
+    color:  #25E6C8;
+}
+
+.navbar-brand img {
+height: 4rem;
+margin-top: 0.5rem;
+}
+
+.navbar-toggler {
+    font-size: 2.5rem;
+    color:#2BAAEC;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-collapse { 
+   align-items: center;
+   display: none;
+   
+}
+
+.showcase-content {
+
+    padding-bottom: 2rem;
+}
+
+#showcase .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#showcase .container img {
+    height: 480px;
+    margin-top: 1rem;
+    display: none;
+}
+
+#showcase .container .showcase-content-box {
+    align-self: center;
+ 
+}
+
+.showcase-content-box .showcase-content h1 { 
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+}
+
+.showcase-content-box .showcase-content p {
+    font-size: 0.9rem;
+}
+
+
+.bg-gray {
+   background-color:#DEDEDE ; 
+}
+
+.bg-dark {
+    
+    background: #1d3557;
+    color:#f1faee
+}
+.bg-white {
+    background:#f1faee;
+    color: #1d3557;
+}
+
+.btn {
+display:inline-block;
+font-weight: 400;
+font-size: 1rem;
+margin-top: 0.5rem;
+text-align: center;
+vertical-align: middle;
+padding:0.75rem 2.5rem;  
+border-radius: 0.5rem;
+border: 1px solid transparent;
+background-color: transparent;
+}
+
+.btn-greenish {
+color: #fff;
+background-color:#25E6C8;
+font-weight: 700;
+}
+.btn-greenish:hover{
+    cursor: pointer;
+    background-color:  #2BAAEC;
+}
+
+
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 530px;
+    }
+
+    p {
+        color:#626262;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    
+    .container {
+        max-width: 720px;
+    }
+    #showcase .container img {
+    height: 480px;
+    margin-top: 1rem;
+    display: inline-block;
+    }
+
+    .nav-link {
+       padding: 0 1rem;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+       display: flex;
+    }
+
+    #showcase .container {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.8rem; /*kan tex justera hur nära DIVSEN är varandra*/
+    }
+    
+
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
