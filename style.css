@@ -132,7 +132,7 @@ margin-top: 0.5rem;
     background-repeat: no-repeat;
     padding-left: 2.5rem;
     justify-content: center;
-    
+
 }
 
 #showcase .container img {
@@ -194,6 +194,7 @@ color: #2BAAEC
     display: flex;
     width: 500px;
     justify-content: center;
+    display: none;
     
 }
 
@@ -259,6 +260,10 @@ font-weight: 700;
        display: flex;
     }
 
+    .nav-link {
+        padding: 0.4rem;
+    }
+
     .navbar-top .container {
 
         padding-left: 0;
@@ -285,6 +290,7 @@ font-weight: 700;
     height: 480px;
     margin-top: 1rem;
     display: inline-block;
+    
     }
 
     #showcase .container {
@@ -297,6 +303,10 @@ font-weight: 700;
     .nav-link {
        padding: 0 1rem;
     }
+    
+    .navbar-collapse {
+        display: flex;
+     }
 
 
     #showcase .container {
@@ -312,7 +322,16 @@ font-weight: 700;
         /* height: 30rem; */
     margin-top: 4.1rem;
     padding-left: 5rem;
+    display: inline-block;
     }
+
+    .about-us-img {
+        display: flex;
+        width: 500px;
+        justify-content: center;
+        
+    }
+
     .about-statistics {
         display: flex;
     }
