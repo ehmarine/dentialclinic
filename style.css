@@ -58,6 +58,19 @@ body {
     margin: 0 auto; /* auto centrerar innehållet horisontellt*/
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+
+}
+
+.wrapper {
+    width: 300px;
+}
+
 .navbar-top .container {
     align-items:center ;
     padding-left: 2.5rem;
@@ -141,12 +154,12 @@ margin-top: 0.5rem;
     display: none;
 }
 
-.showcase-content-box .showcase-content h1 { 
-    font-size: 2.8rem;
+.showcase-content h1 { 
+    font-size: 3rem;
     line-height: 3.5rem;
 }
 
-.showcase-content-box .showcase-content p {
+.showcase-content p {
     font-size: 0.9rem;
 }
 
@@ -164,25 +177,23 @@ margin-top: 0.5rem;
 
 .about-statistics {
     display: flex;
-    width: 300px;
+    width: 100%;
 }
 
 
 .about-us-box > h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    border-bottom: 3px solid #25E6C8;
 }
-
-.about-us
 
 .about-us-box span {
 color: #2BAAEC
 }
 
-.about-us-box > h1 {
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
+
 
 .h1-blue {
     font-size: 2rem;
@@ -193,6 +204,7 @@ color: #2BAAEC
     font-size: 1.7rem;
     margin-bottom: 0px;
     margin-top: 30px;
+    font-weight: 500;
 }
 
 .about-stat > p {
@@ -205,7 +217,33 @@ color: #2BAAEC
     display: none;
 }
 
+/* SERVICES */
 
+#services {
+    background-color: #F7F7F7;
+}
+
+/* #services .container {
+   display: flex;
+   justify-content: center;
+} */
+
+/* #services .container .rubrik {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ } */
+
+ .rubrik > h1 {
+     font-size: 1.8rem;
+     width: 300px;
+     padding-bottom: 10px;
+     border-bottom: 3px solid #25E6C8;
+     text-align: center;
+
+    }   
+ 
+    
 
 /* BTN */
 
@@ -313,10 +351,6 @@ font-weight: 700;
         color: #2BAAEC 
     }
 
-    .about-stat p:nth-of-type(1) {
-        padding-top: 0;
-        border-top:none;
-    }
 
     #about-us .container {
         display: flex;
@@ -345,7 +379,10 @@ font-weight: 700;
         display:grid;
         grid-template-columns: 1fr 1fr;
         background:none;
-        
+    }
+
+    .showcase-content-box {
+        margin-right: 2rem;
     }
 
     .nav-link {
@@ -391,6 +428,24 @@ font-weight: 700;
     
     .about-us-box span {
     color: #2BAAEC
+    }
+
+    /* SERVICES */
+
+    #services > .container {
+      display: block;
+        align-items: center;
+    }
+
+    .grid {
+         /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gör det responsivt väldigt lätt */
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box {
+        padding: 1rem;
     }
 
 }
