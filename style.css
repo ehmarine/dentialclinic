@@ -489,9 +489,6 @@ font-weight: 700;
 
 /* APPOINTMENT */
 
-.appointment-container > .btn {
-    width: 80%;
-    }
 
 }   
 
@@ -585,6 +582,10 @@ font-weight: 700;
         justify-content: space-between;
     }
 
+    .appointment-container > .btn {
+        width: 80%;
+        }
+
 }
 @media (min-width: 992px) {
     .container {
@@ -641,6 +642,10 @@ font-weight: 700;
             flex-direction: row;
             margin: 0 10rem;
         }
+
+        .appointment-container > .btn {
+            width: auto;
+            }
 
 
 
