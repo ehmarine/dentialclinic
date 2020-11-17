@@ -487,9 +487,13 @@ font-weight: 700;
         display: none;
     }
 
+/* APPOINTMENT */
 
+.appointment-container > .btn {
+    width: 80%;
+    }
 
- 
+}   
 
 
 
@@ -579,7 +583,6 @@ font-weight: 700;
     .appointment {
         width: 100%;
         justify-content: space-between;
-  
     }
 
 }
@@ -638,7 +641,7 @@ font-weight: 700;
             flex-direction: row;
             margin: 0 10rem;
         }
-}
+
 
 
 }
